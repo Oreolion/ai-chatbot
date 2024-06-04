@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>AI CHATBOT</title>
   </head>
   <body>
-    <div id="app">
-        <h1>HELLO WORLD</h1>
-    </div>
+        <main>
+            <section class="chatbot-container">
+                <div class="chatbot-header">
+                    <img src="images/logo-scrimba.svg" class="logo">
+                    <p class="sub-heading">Knowledge Bank</p>
+                </div>
+                <div class="chatbot-conversation-container" id="chatbot-conversation-container">
+                </div>
+                <form id="form" class="chatbot-input-container">
+                    <input name="user-input" type="text" id="user-input" required>
+                    <button id="submit-btn" class="submit-btn">
+                            <img
+                                src="images/send.svg"   
+                                class="send-btn-icon"
+                            >
+                    </button>
+                </form>
+            </section>
+        </main>
+        <script src="/index.js" type="module"></script>    
     <script type="module" src="/app.js"></script>
   </body>
 </html>
