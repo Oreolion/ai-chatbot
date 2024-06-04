@@ -1,11 +1,14 @@
 document.addEventListener('submit', (e) => {
     e.preventDefault()
+    console.log('clicked again');
     progressConversation()
+
 })
 
-const openAIApiKey = process.env.OPENAI_API_KEY
-
+const openAIApiKey = import.meta.env.VITE_OPENAI_API_KEY;
+// console.log(openAIApiKey);
 async function progressConversation() {
+    console.log('clicked');
     const userInput = document.getElementById('user-input')
     const chatbotConversation = document.getElementById('chatbot-conversation-container')
     const question = userInput.value
